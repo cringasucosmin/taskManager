@@ -64,7 +64,7 @@ jobs:
       # 8. Run all tests (headless mode for CI)
       - name: Run QA tests
         run: mvn test -Dheadless=true
-        working-directory: ../test-framework
+        working-directory: ./test-framework
 
       # 9. Upload ExtentReport as artifact (viewable after run)
       - name: Upload test report
