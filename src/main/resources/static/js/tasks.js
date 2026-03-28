@@ -70,11 +70,17 @@ function renderTasks(tasks) {
                 </div>
             </div>
             <div class="task-actions">
+                ${nextStatus(task.status) ? `<button class="btn btn-success btn-sm status-btn" data-id="${task.id}" data-status="${nextStatus(task.status)}">${nextStatusLabel(task.status)}</button>` : ''}
                 <button class="btn btn-outline btn-sm edit-btn" data-id="${task.id}">Edit</button>
                 <button class="btn btn-danger btn-sm delete-btn" data-id="${task.id}">Delete</button>
             </div>
         </div>
     `).join('');
+
+    // Attach status change listeners
+    document.querySelectorAll('.status-btn').forEach(btn => {
+        btn.addEventListener('click', () => changeStatus(parseInt(btn.dataset.id), btn.dataset.status));
+    });
 
     // Attach edit listeners
     document.querySelectorAll('.edit-btn').forEach(btn => {
@@ -214,6 +220,30 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
 function formatStatus(status) {
     const map = { PENDING: 'Pending', IN_PROGRESS: 'In Progress', DONE: 'Done' };
     return map[status] || status;
+}
+
+function nextStatus(status) {
+    const map = { PENDING: 'IN_PROGRESS', IN_PROGRESS: 'DONE' };
+    return map[status] || null;
+}
+
+function nextStatusLabel(status) {
+    const map = { PENDING: '→ In Progress', IN_PROGRESS: '→ Done' };
+    return map[status] || '';
+}
+
+async function changeStatus(taskId, newStatus) {
+    const taskCard = document.querySelector(`.task-card[data-id="${taskId}"]`);
+    const title = taskCard.querySelector('.task-title').textContent;
+    const descEl = taskCard.querySelector('.task-description');
+    const description = descEl ? descEl.textContent : '';
+
+    await fetch(`/api/tasks/${taskId}`, {
+        method: 'PUT',
+        headers: authHeader(),
+        body: JSON.stringify({ title, description, status: newStatus })
+    });
+    loadTasks();
 }
 
 function formatDate(dateStr) {
