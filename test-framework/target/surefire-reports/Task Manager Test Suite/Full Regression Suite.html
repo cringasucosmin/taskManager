@@ -1,0 +1,225 @@
+<html>
+<head>
+<title>TestNG:  Full Regression Suite</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Full Regression Suite</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>29/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Mar 28 11:26:28 EET 2026</td>
+</tr>
+<tr><td>Total time:</td><td>20 seconds (20630 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.api.TasksApiTests.updateTask_changesFields()'><b>updateTask_changesFields</b><br>Test class: tests.api.TasksApiTests<br>Test method: Updating a task changes its title and status correctly</td>
+<td></td>
+<td>0</td>
+<td>tests.api.TasksApiTests@43bc63a3</td></tr>
+<tr>
+<td title='tests.ui.TaskFilterTests.filterByPending_showsOnlyPendingTasks()'><b>filterByPending_showsOnlyPendingTasks</b><br>Test class: tests.ui.TaskFilterTests<br>Test method: Clicking 'Pending' filter shows only PENDING tasks</td>
+<td></td>
+<td>0</td>
+<td>tests.ui.TaskFilterTests@10683d9d</td></tr>
+<tr>
+<td title='tests.ui.LoginTests.loginWithWrongPassword_showsErrorMessage()'><b>loginWithWrongPassword_showsErrorMessage</b><br>Test class: tests.ui.LoginTests<br>Test method: Logging in with a wrong password shows an error message</td>
+<td></td>
+<td>0</td>
+<td>tests.ui.LoginTests@702657cc</td></tr>
+<tr>
+<td title='tests.api.AuthApiTests.loginWithValidCredentials_returnsToken()'><b>loginWithValidCredentials_returnsToken</b><br>Test class: tests.api.AuthApiTests<br>Test method: Login with valid credentials returns 200 and a non-empty token</td>
+<td></td>
+<td>0</td>
+<td>tests.api.AuthApiTests@206a70ef</td></tr>
+<tr>
+<td title='tests.ui.TaskCRUDTests.cancelDeleteModal_taskRemainsInList()'><b>cancelDeleteModal_taskRemainsInList</b><br>Test class: tests.ui.TaskCRUDTests<br>Test method: Cancelling the delete modal keeps the task in the list</td>
+<td></td>
+<td>0</td>
+<td>tests.ui.TaskCRUDTests@1f2586d6</td></tr>
+<tr>
+<td title='tests.ui.TaskCRUDTests.cancelEdit_resetsForm()'><b>cancelEdit_resetsForm</b><br>Test class: tests.ui.TaskCRUDTests<br>Test method: Clicking Cancel in edit mode restores the form to its initial state</td>
+<td></td>
+<td>0</td>
+<td>tests.ui.TaskCRUDTests@1f2586d6</td></tr>
+<tr>
+<td title='tests.ui.TaskCRUDTests.createTaskWithValidData_appearsInList()'><b>createTaskWithValidData_appearsInList</b><br>Test class: tests.ui.TaskCRUDTests<br>Test method: Creating a task with a valid title makes it appear in the list</td>
+<td></td>
+<td>0</td>
+<td>tests.ui.TaskCRUDTests@1f2586d6</td></tr>
+<tr>
+<td title='tests.ui.LoginTests.logout_redirectsToLoginPage()'><b>logout_redirectsToLoginPage</b><br>Test class: tests.ui.LoginTests<br>Test method: Logging out from the dashboard redirects back to the login page</td>
+<td></td>
+<td>0</td>
+<td>tests.ui.LoginTests@702657cc</td></tr>
+<tr>
+<td title='tests.ui.TaskFilterTests.filterAll_showsAllTasks()'><b>filterAll_showsAllTasks</b><br>Test class: tests.ui.TaskFilterTests<br>Test method: Clicking 'All' filter shows all 3 tasks</td>
+<td></td>
+<td>0</td>
+<td>tests.ui.TaskFilterTests@10683d9d</td></tr>
+<tr>
+<td title='tests.ui.TaskFilterTests.filterByDone_showsOnlyDoneTasks()'><b>filterByDone_showsOnlyDoneTasks</b><br>Test class: tests.ui.TaskFilterTests<br>Test method: Clicking 'Done' filter shows only DONE tasks</td>
+<td></td>
+<td>0</td>
+<td>tests.ui.TaskFilterTests@10683d9d</td></tr>
+<tr>
+<td title='tests.ui.TaskCRUDTests.deleteTaskWithConfirmation_removesFromList()'><b>deleteTaskWithConfirmation_removesFromList</b><br>Test class: tests.ui.TaskCRUDTests<br>Test method: Deleting a task with confirmation removes it from the list</td>
+<td></td>
+<td>0</td>
+<td>tests.ui.TaskCRUDTests@1f2586d6</td></tr>
+<tr>
+<td title='tests.api.TasksApiTests.getTasksFilteredByStatus_returnsOnlyMatchingStatus()'><b>getTasksFilteredByStatus_returnsOnlyMatchingStatus</b><br>Test class: tests.api.TasksApiTests<br>Test method: GET /api/tasks?status=PENDING returns only PENDING tasks</td>
+<td></td>
+<td>0</td>
+<td>tests.api.TasksApiTests@43bc63a3</td></tr>
+<tr>
+<td title='tests.api.TasksApiTests.getTasks_returnsArray()'><b>getTasks_returnsArray</b><br>Test class: tests.api.TasksApiTests<br>Test method: GET /api/tasks returns a JSON array</td>
+<td></td>
+<td>0</td>
+<td>tests.api.TasksApiTests@43bc63a3</td></tr>
+<tr>
+<td title='tests.api.AuthApiTests.loginWithNonExistentUser_returns401()'><b>loginWithNonExistentUser_returns401</b><br>Test class: tests.api.AuthApiTests<br>Test method: Login with a non-existent username returns 401</td>
+<td></td>
+<td>0</td>
+<td>tests.api.AuthApiTests@206a70ef</td></tr>
+<tr>
+<td title='tests.api.AuthApiTests.registerDuplicateUser_returns400()'><b>registerDuplicateUser_returns400</b><br>Test class: tests.api.AuthApiTests<br>Test method: Registering with a duplicate username returns 400 with an error</td>
+<td></td>
+<td>0</td>
+<td>tests.api.AuthApiTests@206a70ef</td></tr>
+<tr>
+<td title='tests.ui.LoginTests.loginWithValidCredentials_redirectsToDashboard()'><b>loginWithValidCredentials_redirectsToDashboard</b><br>Test class: tests.ui.LoginTests<br>Test method: Logging in with valid credentials redirects to the dashboard</td>
+<td></td>
+<td>0</td>
+<td>tests.ui.LoginTests@702657cc</td></tr>
+<tr>
+<td title='tests.ui.TaskFilterTests.filterByInProgress_showsOnlyInProgressTasks()'><b>filterByInProgress_showsOnlyInProgressTasks</b><br>Test class: tests.ui.TaskFilterTests<br>Test method: Clicking 'In Progress' filter shows only IN_PROGRESS tasks</td>
+<td></td>
+<td>0</td>
+<td>tests.ui.TaskFilterTests@10683d9d</td></tr>
+<tr>
+<td title='tests.api.AuthApiTests.registerWithEmptyUsername_returns400()'><b>registerWithEmptyUsername_returns400</b><br>Test class: tests.api.AuthApiTests<br>Test method: Registering with an empty username returns 400</td>
+<td></td>
+<td>0</td>
+<td>tests.api.AuthApiTests@206a70ef</td></tr>
+<tr>
+<td title='tests.ui.TaskCRUDTests.createTaskWithEmptyTitle_showsError()'><b>createTaskWithEmptyTitle_showsError</b><br>Test class: tests.ui.TaskCRUDTests<br>Test method: Submitting the task form with an empty title shows an error</td>
+<td></td>
+<td>0</td>
+<td>tests.ui.TaskCRUDTests@1f2586d6</td></tr>
+<tr>
+<td title='tests.api.TasksApiTests.createTaskWithEmptyTitle_returns400()'><b>createTaskWithEmptyTitle_returns400</b><br>Test class: tests.api.TasksApiTests<br>Test method: Creating a task without a title returns 400</td>
+<td></td>
+<td>0</td>
+<td>tests.api.TasksApiTests@43bc63a3</td></tr>
+<tr>
+<td title='tests.ui.LoginTests.registerNewUser_showsSuccessMessage()'><b>registerNewUser_showsSuccessMessage</b><br>Test class: tests.ui.LoginTests<br>Test method: Registering a new user via the register form shows a success message</td>
+<td></td>
+<td>0</td>
+<td>tests.ui.LoginTests@702657cc</td></tr>
+<tr>
+<td title='tests.ui.TaskFilterTests.switchingFilterBackToAll_restoresFullList()'><b>switchingFilterBackToAll_restoresFullList</b><br>Test class: tests.ui.TaskFilterTests<br>Test method: Switching from a filtered view back to ALL shows all tasks again</td>
+<td></td>
+<td>0</td>
+<td>tests.ui.TaskFilterTests@10683d9d</td></tr>
+<tr>
+<td title='tests.api.TasksApiTests.createTask_returns201WithBody()'><b>createTask_returns201WithBody</b><br>Test class: tests.api.TasksApiTests<br>Test method: Creating a task returns 201 with id, title and status PENDING</td>
+<td></td>
+<td>0</td>
+<td>tests.api.TasksApiTests@43bc63a3</td></tr>
+<tr>
+<td title='tests.api.TasksApiTests.deleteTask_returns204()'><b>deleteTask_returns204</b><br>Test class: tests.api.TasksApiTests<br>Test method: Deleting a task returns 204 and the task no longer exists</td>
+<td></td>
+<td>0</td>
+<td>tests.api.TasksApiTests@43bc63a3</td></tr>
+<tr>
+<td title='tests.ui.LoginTests.loginWithEmptyFields_showsErrorMessage()'><b>loginWithEmptyFields_showsErrorMessage</b><br>Test class: tests.ui.LoginTests<br>Test method: Submitting the login form with empty fields shows an error</td>
+<td></td>
+<td>0</td>
+<td>tests.ui.LoginTests@702657cc</td></tr>
+<tr>
+<td title='tests.api.AuthApiTests.registerNewUser_returns200()'><b>registerNewUser_returns200</b><br>Test class: tests.api.AuthApiTests<br>Test method: Registering a new user returns 200 and a success message</td>
+<td></td>
+<td>0</td>
+<td>tests.api.AuthApiTests@206a70ef</td></tr>
+<tr>
+<td title='tests.api.AuthApiTests.loginWithWrongPassword_returns401()'><b>loginWithWrongPassword_returns401</b><br>Test class: tests.api.AuthApiTests<br>Test method: Login with wrong password returns 401 with an error message</td>
+<td></td>
+<td>0</td>
+<td>tests.api.AuthApiTests@206a70ef</td></tr>
+<tr>
+<td title='tests.api.TasksApiTests.getTasksWithoutToken_returns401()'><b>getTasksWithoutToken_returns401</b><br>Test class: tests.api.TasksApiTests<br>Test method: Accessing tasks without a token returns 401</td>
+<td></td>
+<td>0</td>
+<td>tests.api.TasksApiTests@43bc63a3</td></tr>
+<tr>
+<td title='tests.ui.TaskCRUDTests.editExistingTask_updatesTitleInList()'><b>editExistingTask_updatesTitleInList</b><br>Test class: tests.ui.TaskCRUDTests<br>Test method: Editing a task updates its title in the list</td>
+<td></td>
+<td>0</td>
+<td>tests.ui.TaskCRUDTests@1f2586d6</td></tr>
+</table><p>
+</body>
+</html>

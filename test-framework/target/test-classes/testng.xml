@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Task Manager Test Suite" verbose="2">
+
+    <!-- Extent Report Listener — generates HTML report automatically -->
+    <listeners>
+        <listener class-name="utils.ExtentReportListener"/>
+    </listeners>
+
+    <!--
+        Single test block — no class duplication.
+        Use command-line groups to filter:
+          mvn test -Dgroups=smoke
+          mvn test -Dgroups=api
+          mvn test -Dgroups=ui
+    -->
+    <test name="Full Regression Suite">
+        <classes>
+            <!-- API tests first (no browser needed, faster) -->
+            <class name="tests.api.AuthApiTests"/>
+            <class name="tests.api.TasksApiTests"/>
+            <!-- UI tests after (require browser) -->
+            <class name="tests.ui.LoginTests"/>
+            <class name="tests.ui.TaskCRUDTests"/>
+            <class name="tests.ui.TaskFilterTests"/>
+        </classes>
+    </test>
+
+</suite>

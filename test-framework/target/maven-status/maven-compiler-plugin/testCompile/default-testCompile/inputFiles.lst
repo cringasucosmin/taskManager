@@ -1,0 +1,13 @@
+C:\Users\cring\Desktop\proiectNou\test-framework\src\test\java\base\BaseApiTest.java
+C:\Users\cring\Desktop\proiectNou\test-framework\src\test\java\base\BaseTest.java
+C:\Users\cring\Desktop\proiectNou\test-framework\src\test\java\pages\BasePage.java
+C:\Users\cring\Desktop\proiectNou\test-framework\src\test\java\pages\DashboardPage.java
+C:\Users\cring\Desktop\proiectNou\test-framework\src\test\java\pages\LoginPage.java
+C:\Users\cring\Desktop\proiectNou\test-framework\src\test\java\tests\api\AuthApiTests.java
+C:\Users\cring\Desktop\proiectNou\test-framework\src\test\java\tests\api\TasksApiTests.java
+C:\Users\cring\Desktop\proiectNou\test-framework\src\test\java\tests\ui\LoginTests.java
+C:\Users\cring\Desktop\proiectNou\test-framework\src\test\java\tests\ui\TaskCRUDTests.java
+C:\Users\cring\Desktop\proiectNou\test-framework\src\test\java\tests\ui\TaskFilterTests.java
+C:\Users\cring\Desktop\proiectNou\test-framework\src\test\java\utils\ConfigReader.java
+C:\Users\cring\Desktop\proiectNou\test-framework\src\test\java\utils\ExtentReportListener.java
+C:\Users\cring\Desktop\proiectNou\test-framework\src\test\java\utils\ScreenshotUtils.java

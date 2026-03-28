@@ -1,0 +1,145 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>13/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Mar 28 11:20:11 EET 2026</td>
+</tr>
+<tr><td>Total time:</td><td>1 seconds (1740 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.api.AuthApiTests.loginWithValidCredentials_returnsToken()'><b>loginWithValidCredentials_returnsToken</b><br>Test class: tests.api.AuthApiTests<br>Test method: Login with valid credentials returns 200 and a non-empty token</td>
+<td></td>
+<td>0</td>
+<td>tests.api.AuthApiTests@4facf68f</td></tr>
+<tr>
+<td title='tests.api.TasksApiTests.getTasksFilteredByStatus_returnsOnlyMatchingStatus()'><b>getTasksFilteredByStatus_returnsOnlyMatchingStatus</b><br>Test class: tests.api.TasksApiTests<br>Test method: GET /api/tasks?status=PENDING returns only PENDING tasks</td>
+<td></td>
+<td>0</td>
+<td>tests.api.TasksApiTests@72f926e6</td></tr>
+<tr>
+<td title='tests.api.TasksApiTests.deleteTask_returns204()'><b>deleteTask_returns204</b><br>Test class: tests.api.TasksApiTests<br>Test method: Deleting a task returns 204 and the task no longer exists</td>
+<td></td>
+<td>0</td>
+<td>tests.api.TasksApiTests@72f926e6</td></tr>
+<tr>
+<td title='tests.api.TasksApiTests.getTasks_returnsArray()'><b>getTasks_returnsArray</b><br>Test class: tests.api.TasksApiTests<br>Test method: GET /api/tasks returns a JSON array</td>
+<td></td>
+<td>0</td>
+<td>tests.api.TasksApiTests@72f926e6</td></tr>
+<tr>
+<td title='tests.api.AuthApiTests.loginWithWrongPassword_returns401()'><b>loginWithWrongPassword_returns401</b><br>Test class: tests.api.AuthApiTests<br>Test method: Login with wrong password returns 401 with an error message</td>
+<td></td>
+<td>0</td>
+<td>tests.api.AuthApiTests@4facf68f</td></tr>
+<tr>
+<td title='tests.api.TasksApiTests.createTaskWithEmptyTitle_returns400()'><b>createTaskWithEmptyTitle_returns400</b><br>Test class: tests.api.TasksApiTests<br>Test method: Creating a task without a title returns 400</td>
+<td></td>
+<td>0</td>
+<td>tests.api.TasksApiTests@72f926e6</td></tr>
+<tr>
+<td title='tests.api.TasksApiTests.updateTask_changesFields()'><b>updateTask_changesFields</b><br>Test class: tests.api.TasksApiTests<br>Test method: Updating a task changes its title and status correctly</td>
+<td></td>
+<td>0</td>
+<td>tests.api.TasksApiTests@72f926e6</td></tr>
+<tr>
+<td title='tests.api.AuthApiTests.registerNewUser_returns200()'><b>registerNewUser_returns200</b><br>Test class: tests.api.AuthApiTests<br>Test method: Registering a new user returns 200 and a success message</td>
+<td></td>
+<td>0</td>
+<td>tests.api.AuthApiTests@4facf68f</td></tr>
+<tr>
+<td title='tests.api.AuthApiTests.registerDuplicateUser_returns400()'><b>registerDuplicateUser_returns400</b><br>Test class: tests.api.AuthApiTests<br>Test method: Registering with a duplicate username returns 400 with an error</td>
+<td></td>
+<td>0</td>
+<td>tests.api.AuthApiTests@4facf68f</td></tr>
+<tr>
+<td title='tests.api.AuthApiTests.loginWithNonExistentUser_returns401()'><b>loginWithNonExistentUser_returns401</b><br>Test class: tests.api.AuthApiTests<br>Test method: Login with a non-existent username returns 401</td>
+<td></td>
+<td>0</td>
+<td>tests.api.AuthApiTests@4facf68f</td></tr>
+<tr>
+<td title='tests.api.AuthApiTests.registerWithEmptyUsername_returns400()'><b>registerWithEmptyUsername_returns400</b><br>Test class: tests.api.AuthApiTests<br>Test method: Registering with an empty username returns 400</td>
+<td></td>
+<td>0</td>
+<td>tests.api.AuthApiTests@4facf68f</td></tr>
+<tr>
+<td title='tests.api.TasksApiTests.getTasksWithoutToken_returns401()'><b>getTasksWithoutToken_returns401</b><br>Test class: tests.api.TasksApiTests<br>Test method: Accessing tasks without a token returns 401</td>
+<td></td>
+<td>0</td>
+<td>tests.api.TasksApiTests@72f926e6</td></tr>
+<tr>
+<td title='tests.api.TasksApiTests.createTask_returns201WithBody()'><b>createTask_returns201WithBody</b><br>Test class: tests.api.TasksApiTests<br>Test method: Creating a task returns 201 with id, title and status PENDING</td>
+<td></td>
+<td>0</td>
+<td>tests.api.TasksApiTests@72f926e6</td></tr>
+</table><p>
+</body>
+</html>

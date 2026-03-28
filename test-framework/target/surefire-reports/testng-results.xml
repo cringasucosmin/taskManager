@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="29" passed="29" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-28T11:26:28 EET" name="Task Manager Test Suite" finished-at="2026-03-28T11:26:49 EET" duration-ms="20630">
+    <groups>
+      <group name="ui">
+        <method signature="LoginTests.loginWithEmptyFields_showsErrorMessage()[pri:0, instance:tests.ui.LoginTests@702657cc]" name="loginWithEmptyFields_showsErrorMessage" class="tests.ui.LoginTests"/>
+        <method signature="LoginTests.loginWithValidCredentials_redirectsToDashboard()[pri:0, instance:tests.ui.LoginTests@702657cc]" name="loginWithValidCredentials_redirectsToDashboard" class="tests.ui.LoginTests"/>
+        <method signature="LoginTests.loginWithWrongPassword_showsErrorMessage()[pri:0, instance:tests.ui.LoginTests@702657cc]" name="loginWithWrongPassword_showsErrorMessage" class="tests.ui.LoginTests"/>
+        <method signature="LoginTests.logout_redirectsToLoginPage()[pri:0, instance:tests.ui.LoginTests@702657cc]" name="logout_redirectsToLoginPage" class="tests.ui.LoginTests"/>
+        <method signature="LoginTests.registerNewUser_showsSuccessMessage()[pri:0, instance:tests.ui.LoginTests@702657cc]" name="registerNewUser_showsSuccessMessage" class="tests.ui.LoginTests"/>
+        <method signature="TaskCRUDTests.cancelDeleteModal_taskRemainsInList()[pri:0, instance:tests.ui.TaskCRUDTests@1f2586d6]" name="cancelDeleteModal_taskRemainsInList" class="tests.ui.TaskCRUDTests"/>
+        <method signature="TaskCRUDTests.cancelEdit_resetsForm()[pri:0, instance:tests.ui.TaskCRUDTests@1f2586d6]" name="cancelEdit_resetsForm" class="tests.ui.TaskCRUDTests"/>
+        <method signature="TaskCRUDTests.createTaskWithEmptyTitle_showsError()[pri:0, instance:tests.ui.TaskCRUDTests@1f2586d6]" name="createTaskWithEmptyTitle_showsError" class="tests.ui.TaskCRUDTests"/>
+        <method signature="TaskCRUDTests.createTaskWithValidData_appearsInList()[pri:0, instance:tests.ui.TaskCRUDTests@1f2586d6]" name="createTaskWithValidData_appearsInList" class="tests.ui.TaskCRUDTests"/>
+        <method signature="TaskCRUDTests.deleteTaskWithConfirmation_removesFromList()[pri:0, instance:tests.ui.TaskCRUDTests@1f2586d6]" name="deleteTaskWithConfirmation_removesFromList" class="tests.ui.TaskCRUDTests"/>
+        <method signature="TaskCRUDTests.editExistingTask_updatesTitleInList()[pri:0, instance:tests.ui.TaskCRUDTests@1f2586d6]" name="editExistingTask_updatesTitleInList" class="tests.ui.TaskCRUDTests"/>
+        <method signature="TaskFilterTests.filterAll_showsAllTasks()[pri:0, instance:tests.ui.TaskFilterTests@10683d9d]" name="filterAll_showsAllTasks" class="tests.ui.TaskFilterTests"/>
+        <method signature="TaskFilterTests.filterByDone_showsOnlyDoneTasks()[pri:0, instance:tests.ui.TaskFilterTests@10683d9d]" name="filterByDone_showsOnlyDoneTasks" class="tests.ui.TaskFilterTests"/>
+        <method signature="TaskFilterTests.filterByInProgress_showsOnlyInProgressTasks()[pri:0, instance:tests.ui.TaskFilterTests@10683d9d]" name="filterByInProgress_showsOnlyInProgressTasks" class="tests.ui.TaskFilterTests"/>
+        <method signature="TaskFilterTests.filterByPending_showsOnlyPendingTasks()[pri:0, instance:tests.ui.TaskFilterTests@10683d9d]" name="filterByPending_showsOnlyPendingTasks" class="tests.ui.TaskFilterTests"/>
+        <method signature="TaskFilterTests.switchingFilterBackToAll_restoresFullList()[pri:0, instance:tests.ui.TaskFilterTests@10683d9d]" name="switchingFilterBackToAll_restoresFullList" class="tests.ui.TaskFilterTests"/>
+      </group> <!-- ui -->
+      <group name="smoke">
+        <method signature="AuthApiTests.loginWithValidCredentials_returnsToken()[pri:0, instance:tests.api.AuthApiTests@206a70ef]" name="loginWithValidCredentials_returnsToken" class="tests.api.AuthApiTests"/>
+        <method signature="AuthApiTests.registerNewUser_returns200()[pri:0, instance:tests.api.AuthApiTests@206a70ef]" name="registerNewUser_returns200" class="tests.api.AuthApiTests"/>
+        <method signature="TasksApiTests.createTask_returns201WithBody()[pri:0, instance:tests.api.TasksApiTests@43bc63a3]" name="createTask_returns201WithBody" class="tests.api.TasksApiTests"/>
+        <method signature="LoginTests.loginWithValidCredentials_redirectsToDashboard()[pri:0, instance:tests.ui.LoginTests@702657cc]" name="loginWithValidCredentials_redirectsToDashboard" class="tests.ui.LoginTests"/>
+      </group> <!-- smoke -->
+      <group name="api">
+        <method signature="AuthApiTests.loginWithNonExistentUser_returns401()[pri:0, instance:tests.api.AuthApiTests@206a70ef]" name="loginWithNonExistentUser_returns401" class="tests.api.AuthApiTests"/>
+        <method signature="AuthApiTests.loginWithValidCredentials_returnsToken()[pri:0, instance:tests.api.AuthApiTests@206a70ef]" name="loginWithValidCredentials_returnsToken" class="tests.api.AuthApiTests"/>
+        <method signature="AuthApiTests.loginWithWrongPassword_returns401()[pri:0, instance:tests.api.AuthApiTests@206a70ef]" name="loginWithWrongPassword_returns401" class="tests.api.AuthApiTests"/>
+        <method signature="AuthApiTests.registerDuplicateUser_returns400()[pri:0, instance:tests.api.AuthApiTests@206a70ef]" name="registerDuplicateUser_returns400" class="tests.api.AuthApiTests"/>
+        <method signature="AuthApiTests.registerNewUser_returns200()[pri:0, instance:tests.api.AuthApiTests@206a70ef]" name="registerNewUser_returns200" class="tests.api.AuthApiTests"/>
+        <method signature="AuthApiTests.registerWithEmptyUsername_returns400()[pri:0, instance:tests.api.AuthApiTests@206a70ef]" name="registerWithEmptyUsername_returns400" class="tests.api.AuthApiTests"/>
+        <method signature="TasksApiTests.createTaskWithEmptyTitle_returns400()[pri:0, instance:tests.api.TasksApiTests@43bc63a3]" name="createTaskWithEmptyTitle_returns400" class="tests.api.TasksApiTests"/>
+        <method signature="TasksApiTests.createTask_returns201WithBody()[pri:0, instance:tests.api.TasksApiTests@43bc63a3]" name="createTask_returns201WithBody" class="tests.api.TasksApiTests"/>
+        <method signature="TasksApiTests.deleteTask_returns204()[pri:0, instance:tests.api.TasksApiTests@43bc63a3]" name="deleteTask_returns204" class="tests.api.TasksApiTests"/>
+        <method signature="TasksApiTests.getTasksFilteredByStatus_returnsOnlyMatchingStatus()[pri:0, instance:tests.api.TasksApiTests@43bc63a3]" name="getTasksFilteredByStatus_returnsOnlyMatchingStatus" class="tests.api.TasksApiTests"/>
+        <method signature="TasksApiTests.getTasksWithoutToken_returns401()[pri:0, instance:tests.api.TasksApiTests@43bc63a3]" name="getTasksWithoutToken_returns401" class="tests.api.TasksApiTests"/>
+        <method signature="TasksApiTests.getTasks_returnsArray()[pri:0, instance:tests.api.TasksApiTests@43bc63a3]" name="getTasks_returnsArray" class="tests.api.TasksApiTests"/>
+        <method signature="TasksApiTests.updateTask_changesFields()[pri:0, instance:tests.api.TasksApiTests@43bc63a3]" name="updateTask_changesFields" class="tests.api.TasksApiTests"/>
+      </group> <!-- api -->
+    </groups>
+    <test started-at="2026-03-28T11:26:28 EET" name="Full Regression Suite" finished-at="2026-03-28T11:26:49 EET" duration-ms="20630">
+      <class name="tests.ui.LoginTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ui.LoginTests@702657cc]" started-at="2026-03-28T11:26:30 EET" name="setUp" finished-at="2026-03-28T11:26:31 EET" duration-ms="937" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpLoginTests()[pri:0, instance:tests.ui.LoginTests@702657cc]" started-at="2026-03-28T11:26:31 EET" name="setUpLoginTests" finished-at="2026-03-28T11:26:31 EET" duration-ms="45" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpLoginTests -->
+        <test-method signature="loginWithEmptyFields_showsErrorMessage()[pri:0, instance:tests.ui.LoginTests@702657cc]" started-at="2026-03-28T11:26:31 EET" name="loginWithEmptyFields_showsErrorMessage" description="Submitting the login form with empty fields shows an error" finished-at="2026-03-28T11:26:31 EET" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithEmptyFields_showsErrorMessage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ui.LoginTests@702657cc]" started-at="2026-03-28T11:26:31 EET" name="tearDown" finished-at="2026-03-28T11:26:31 EET" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ui.LoginTests@702657cc]" started-at="2026-03-28T11:26:31 EET" name="setUp" finished-at="2026-03-28T11:26:32 EET" duration-ms="550" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpLoginTests()[pri:0, instance:tests.ui.LoginTests@702657cc]" started-at="2026-03-28T11:26:32 EET" name="setUpLoginTests" finished-at="2026-03-28T11:26:32 EET" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpLoginTests -->
+        <test-method signature="loginWithValidCredentials_redirectsToDashboard()[pri:0, instance:tests.ui.LoginTests@702657cc]" started-at="2026-03-28T11:26:32 EET" name="loginWithValidCredentials_redirectsToDashboard" description="Logging in with valid credentials redirects to the dashboard" finished-at="2026-03-28T11:26:32 EET" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidCredentials_redirectsToDashboard -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ui.LoginTests@702657cc]" started-at="2026-03-28T11:26:32 EET" name="tearDown" finished-at="2026-03-28T11:26:32 EET" duration-ms="83" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ui.LoginTests@702657cc]" started-at="2026-03-28T11:26:32 EET" name="setUp" finished-at="2026-03-28T11:26:33 EET" duration-ms="538" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpLoginTests()[pri:0, instance:tests.ui.LoginTests@702657cc]" started-at="2026-03-28T11:26:33 EET" name="setUpLoginTests" finished-at="2026-03-28T11:26:33 EET" duration-ms="37" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpLoginTests -->
+        <test-method signature="loginWithWrongPassword_showsErrorMessage()[pri:0, instance:tests.ui.LoginTests@702657cc]" started-at="2026-03-28T11:26:33 EET" name="loginWithWrongPassword_showsErrorMessage" description="Logging in with a wrong password shows an error message" finished-at="2026-03-28T11:26:33 EET" duration-ms="201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithWrongPassword_showsErrorMessage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ui.LoginTests@702657cc]" started-at="2026-03-28T11:26:33 EET" name="tearDown" finished-at="2026-03-28T11:26:33 EET" duration-ms="72" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ui.LoginTests@702657cc]" started-at="2026-03-28T11:26:33 EET" name="setUp" finished-at="2026-03-28T11:26:33 EET" duration-ms="504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpLoginTests()[pri:0, instance:tests.ui.LoginTests@702657cc]" started-at="2026-03-28T11:26:33 EET" name="setUpLoginTests" finished-at="2026-03-28T11:26:33 EET" duration-ms="45" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpLoginTests -->
+        <test-method signature="logout_redirectsToLoginPage()[pri:0, instance:tests.ui.LoginTests@702657cc]" started-at="2026-03-28T11:26:33 EET" name="logout_redirectsToLoginPage" description="Logging out from the dashboard redirects back to the login page" finished-at="2026-03-28T11:26:34 EET" duration-ms="729" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout_redirectsToLoginPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ui.LoginTests@702657cc]" started-at="2026-03-28T11:26:34 EET" name="tearDown" finished-at="2026-03-28T11:26:34 EET" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ui.LoginTests@702657cc]" started-at="2026-03-28T11:26:34 EET" name="setUp" finished-at="2026-03-28T11:26:35 EET" duration-ms="504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpLoginTests()[pri:0, instance:tests.ui.LoginTests@702657cc]" started-at="2026-03-28T11:26:35 EET" name="setUpLoginTests" finished-at="2026-03-28T11:26:35 EET" duration-ms="38" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpLoginTests -->
+        <test-method signature="registerNewUser_showsSuccessMessage()[pri:0, instance:tests.ui.LoginTests@702657cc]" started-at="2026-03-28T11:26:35 EET" name="registerNewUser_showsSuccessMessage" description="Registering a new user via the register form shows a success message" finished-at="2026-03-28T11:26:35 EET" duration-ms="183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerNewUser_showsSuccessMessage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ui.LoginTests@702657cc]" started-at="2026-03-28T11:26:35 EET" name="tearDown" finished-at="2026-03-28T11:26:35 EET" duration-ms="103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.ui.LoginTests -->
+      <class name="tests.api.AuthApiTests">
+        <test-method is-config="true" signature="setUpApi()[pri:0, instance:tests.api.AuthApiTests@206a70ef]" started-at="2026-03-28T11:26:28 EET" name="setUpApi" finished-at="2026-03-28T11:26:29 EET" duration-ms="1154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpApi -->
+        <test-method signature="loginWithNonExistentUser_returns401()[pri:0, instance:tests.api.AuthApiTests@206a70ef]" started-at="2026-03-28T11:26:29 EET" name="loginWithNonExistentUser_returns401" description="Login with a non-existent username returns 401" finished-at="2026-03-28T11:26:30 EET" duration-ms="70" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithNonExistentUser_returns401 -->
+        <test-method signature="loginWithValidCredentials_returnsToken()[pri:0, instance:tests.api.AuthApiTests@206a70ef]" started-at="2026-03-28T11:26:30 EET" name="loginWithValidCredentials_returnsToken" description="Login with valid credentials returns 200 and a non-empty token" finished-at="2026-03-28T11:26:30 EET" duration-ms="25" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidCredentials_returnsToken -->
+        <test-method signature="loginWithWrongPassword_returns401()[pri:0, instance:tests.api.AuthApiTests@206a70ef]" started-at="2026-03-28T11:26:30 EET" name="loginWithWrongPassword_returns401" description="Login with wrong password returns 401 with an error message" finished-at="2026-03-28T11:26:30 EET" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithWrongPassword_returns401 -->
+        <test-method signature="registerDuplicateUser_returns400()[pri:0, instance:tests.api.AuthApiTests@206a70ef]" started-at="2026-03-28T11:26:30 EET" name="registerDuplicateUser_returns400" description="Registering with a duplicate username returns 400 with an error" finished-at="2026-03-28T11:26:30 EET" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerDuplicateUser_returns400 -->
+        <test-method signature="registerNewUser_returns200()[pri:0, instance:tests.api.AuthApiTests@206a70ef]" started-at="2026-03-28T11:26:30 EET" name="registerNewUser_returns200" description="Registering a new user returns 200 and a success message" finished-at="2026-03-28T11:26:30 EET" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerNewUser_returns200 -->
+        <test-method signature="registerWithEmptyUsername_returns400()[pri:0, instance:tests.api.AuthApiTests@206a70ef]" started-at="2026-03-28T11:26:30 EET" name="registerWithEmptyUsername_returns400" description="Registering with an empty username returns 400" finished-at="2026-03-28T11:26:30 EET" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerWithEmptyUsername_returns400 -->
+      </class> <!-- tests.api.AuthApiTests -->
+      <class name="tests.ui.TaskCRUDTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ui.TaskCRUDTests@1f2586d6]" started-at="2026-03-28T11:26:35 EET" name="setUp" finished-at="2026-03-28T11:26:36 EET" duration-ms="504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpTaskTests()[pri:0, instance:tests.ui.TaskCRUDTests@1f2586d6]" started-at="2026-03-28T11:26:36 EET" name="setUpTaskTests" finished-at="2026-03-28T11:26:36 EET" duration-ms="226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTaskTests -->
+        <test-method signature="cancelDeleteModal_taskRemainsInList()[pri:0, instance:tests.ui.TaskCRUDTests@1f2586d6]" started-at="2026-03-28T11:26:36 EET" name="cancelDeleteModal_taskRemainsInList" description="Cancelling the delete modal keeps the task in the list" finished-at="2026-03-28T11:26:36 EET" duration-ms="161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cancelDeleteModal_taskRemainsInList -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ui.TaskCRUDTests@1f2586d6]" started-at="2026-03-28T11:26:36 EET" name="tearDown" finished-at="2026-03-28T11:26:36 EET" duration-ms="110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ui.TaskCRUDTests@1f2586d6]" started-at="2026-03-28T11:26:36 EET" name="setUp" finished-at="2026-03-28T11:26:37 EET" duration-ms="519" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpTaskTests()[pri:0, instance:tests.ui.TaskCRUDTests@1f2586d6]" started-at="2026-03-28T11:26:37 EET" name="setUpTaskTests" finished-at="2026-03-28T11:26:37 EET" duration-ms="216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTaskTests -->
+        <test-method signature="cancelEdit_resetsForm()[pri:0, instance:tests.ui.TaskCRUDTests@1f2586d6]" started-at="2026-03-28T11:26:37 EET" name="cancelEdit_resetsForm" description="Clicking Cancel in edit mode restores the form to its initial state" finished-at="2026-03-28T11:26:37 EET" duration-ms="142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cancelEdit_resetsForm -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ui.TaskCRUDTests@1f2586d6]" started-at="2026-03-28T11:26:37 EET" name="tearDown" finished-at="2026-03-28T11:26:37 EET" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ui.TaskCRUDTests@1f2586d6]" started-at="2026-03-28T11:26:37 EET" name="setUp" finished-at="2026-03-28T11:26:38 EET" duration-ms="537" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpTaskTests()[pri:0, instance:tests.ui.TaskCRUDTests@1f2586d6]" started-at="2026-03-28T11:26:38 EET" name="setUpTaskTests" finished-at="2026-03-28T11:26:38 EET" duration-ms="237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTaskTests -->
+        <test-method signature="createTaskWithEmptyTitle_showsError()[pri:0, instance:tests.ui.TaskCRUDTests@1f2586d6]" started-at="2026-03-28T11:26:38 EET" name="createTaskWithEmptyTitle_showsError" description="Submitting the task form with an empty title shows an error" finished-at="2026-03-28T11:26:38 EET" duration-ms="69" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTaskWithEmptyTitle_showsError -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ui.TaskCRUDTests@1f2586d6]" started-at="2026-03-28T11:26:38 EET" name="tearDown" finished-at="2026-03-28T11:26:38 EET" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ui.TaskCRUDTests@1f2586d6]" started-at="2026-03-28T11:26:38 EET" name="setUp" finished-at="2026-03-28T11:26:39 EET" duration-ms="538" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpTaskTests()[pri:0, instance:tests.ui.TaskCRUDTests@1f2586d6]" started-at="2026-03-28T11:26:39 EET" name="setUpTaskTests" finished-at="2026-03-28T11:26:39 EET" duration-ms="214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTaskTests -->
+        <test-method signature="createTaskWithValidData_appearsInList()[pri:0, instance:tests.ui.TaskCRUDTests@1f2586d6]" started-at="2026-03-28T11:26:39 EET" name="createTaskWithValidData_appearsInList" description="Creating a task with a valid title makes it appear in the list" finished-at="2026-03-28T11:26:39 EET" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTaskWithValidData_appearsInList -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ui.TaskCRUDTests@1f2586d6]" started-at="2026-03-28T11:26:39 EET" name="tearDown" finished-at="2026-03-28T11:26:39 EET" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ui.TaskCRUDTests@1f2586d6]" started-at="2026-03-28T11:26:39 EET" name="setUp" finished-at="2026-03-28T11:26:40 EET" duration-ms="506" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpTaskTests()[pri:0, instance:tests.ui.TaskCRUDTests@1f2586d6]" started-at="2026-03-28T11:26:40 EET" name="setUpTaskTests" finished-at="2026-03-28T11:26:40 EET" duration-ms="216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTaskTests -->
+        <test-method signature="deleteTaskWithConfirmation_removesFromList()[pri:0, instance:tests.ui.TaskCRUDTests@1f2586d6]" started-at="2026-03-28T11:26:40 EET" name="deleteTaskWithConfirmation_removesFromList" description="Deleting a task with confirmation removes it from the list" finished-at="2026-03-28T11:26:40 EET" duration-ms="133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTaskWithConfirmation_removesFromList -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ui.TaskCRUDTests@1f2586d6]" started-at="2026-03-28T11:26:40 EET" name="tearDown" finished-at="2026-03-28T11:26:40 EET" duration-ms="88" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ui.TaskCRUDTests@1f2586d6]" started-at="2026-03-28T11:26:40 EET" name="setUp" finished-at="2026-03-28T11:26:40 EET" duration-ms="504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpTaskTests()[pri:0, instance:tests.ui.TaskCRUDTests@1f2586d6]" started-at="2026-03-28T11:26:40 EET" name="setUpTaskTests" finished-at="2026-03-28T11:26:41 EET" duration-ms="723" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTaskTests -->
+        <test-method signature="editExistingTask_updatesTitleInList()[pri:0, instance:tests.ui.TaskCRUDTests@1f2586d6]" started-at="2026-03-28T11:26:41 EET" name="editExistingTask_updatesTitleInList" description="Editing a task updates its title in the list" finished-at="2026-03-28T11:26:41 EET" duration-ms="211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editExistingTask_updatesTitleInList -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ui.TaskCRUDTests@1f2586d6]" started-at="2026-03-28T11:26:41 EET" name="tearDown" finished-at="2026-03-28T11:26:42 EET" duration-ms="101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.ui.TaskCRUDTests -->
+      <class name="tests.ui.TaskFilterTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ui.TaskFilterTests@10683d9d]" started-at="2026-03-28T11:26:42 EET" name="setUp" finished-at="2026-03-28T11:26:42 EET" duration-ms="503" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpFilterTests()[pri:0, instance:tests.ui.TaskFilterTests@10683d9d]" started-at="2026-03-28T11:26:42 EET" name="setUpFilterTests" finished-at="2026-03-28T11:26:42 EET" duration-ms="247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpFilterTests -->
+        <test-method signature="filterAll_showsAllTasks()[pri:0, instance:tests.ui.TaskFilterTests@10683d9d]" started-at="2026-03-28T11:26:42 EET" name="filterAll_showsAllTasks" description="Clicking &#039;All&#039; filter shows all 3 tasks" finished-at="2026-03-28T11:26:43 EET" duration-ms="575" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filterAll_showsAllTasks -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ui.TaskFilterTests@10683d9d]" started-at="2026-03-28T11:26:43 EET" name="tearDown" finished-at="2026-03-28T11:26:43 EET" duration-ms="105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ui.TaskFilterTests@10683d9d]" started-at="2026-03-28T11:26:43 EET" name="setUp" finished-at="2026-03-28T11:26:43 EET" duration-ms="501" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpFilterTests()[pri:0, instance:tests.ui.TaskFilterTests@10683d9d]" started-at="2026-03-28T11:26:43 EET" name="setUpFilterTests" finished-at="2026-03-28T11:26:44 EET" duration-ms="253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpFilterTests -->
+        <test-method signature="filterByDone_showsOnlyDoneTasks()[pri:0, instance:tests.ui.TaskFilterTests@10683d9d]" started-at="2026-03-28T11:26:44 EET" name="filterByDone_showsOnlyDoneTasks" description="Clicking &#039;Done&#039; filter shows only DONE tasks" finished-at="2026-03-28T11:26:44 EET" duration-ms="588" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filterByDone_showsOnlyDoneTasks -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ui.TaskFilterTests@10683d9d]" started-at="2026-03-28T11:26:44 EET" name="tearDown" finished-at="2026-03-28T11:26:44 EET" duration-ms="110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ui.TaskFilterTests@10683d9d]" started-at="2026-03-28T11:26:44 EET" name="setUp" finished-at="2026-03-28T11:26:45 EET" duration-ms="518" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpFilterTests()[pri:0, instance:tests.ui.TaskFilterTests@10683d9d]" started-at="2026-03-28T11:26:45 EET" name="setUpFilterTests" finished-at="2026-03-28T11:26:46 EET" duration-ms="768" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpFilterTests -->
+        <test-method signature="filterByInProgress_showsOnlyInProgressTasks()[pri:0, instance:tests.ui.TaskFilterTests@10683d9d]" started-at="2026-03-28T11:26:46 EET" name="filterByInProgress_showsOnlyInProgressTasks" description="Clicking &#039;In Progress&#039; filter shows only IN_PROGRESS tasks" finished-at="2026-03-28T11:26:46 EET" duration-ms="106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filterByInProgress_showsOnlyInProgressTasks -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ui.TaskFilterTests@10683d9d]" started-at="2026-03-28T11:26:46 EET" name="tearDown" finished-at="2026-03-28T11:26:46 EET" duration-ms="97" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ui.TaskFilterTests@10683d9d]" started-at="2026-03-28T11:26:46 EET" name="setUp" finished-at="2026-03-28T11:26:46 EET" duration-ms="548" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpFilterTests()[pri:0, instance:tests.ui.TaskFilterTests@10683d9d]" started-at="2026-03-28T11:26:46 EET" name="setUpFilterTests" finished-at="2026-03-28T11:26:47 EET" duration-ms="247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpFilterTests -->
+        <test-method signature="filterByPending_showsOnlyPendingTasks()[pri:0, instance:tests.ui.TaskFilterTests@10683d9d]" started-at="2026-03-28T11:26:47 EET" name="filterByPending_showsOnlyPendingTasks" description="Clicking &#039;Pending&#039; filter shows only PENDING tasks" finished-at="2026-03-28T11:26:47 EET" duration-ms="598" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filterByPending_showsOnlyPendingTasks -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ui.TaskFilterTests@10683d9d]" started-at="2026-03-28T11:26:47 EET" name="tearDown" finished-at="2026-03-28T11:26:47 EET" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ui.TaskFilterTests@10683d9d]" started-at="2026-03-28T11:26:47 EET" name="setUp" finished-at="2026-03-28T11:26:48 EET" duration-ms="506" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpFilterTests()[pri:0, instance:tests.ui.TaskFilterTests@10683d9d]" started-at="2026-03-28T11:26:48 EET" name="setUpFilterTests" finished-at="2026-03-28T11:26:48 EET" duration-ms="256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpFilterTests -->
+        <test-method signature="switchingFilterBackToAll_restoresFullList()[pri:0, instance:tests.ui.TaskFilterTests@10683d9d]" started-at="2026-03-28T11:26:48 EET" name="switchingFilterBackToAll_restoresFullList" description="Switching from a filtered view back to ALL shows all tasks again" finished-at="2026-03-28T11:26:49 EET" duration-ms="619" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- switchingFilterBackToAll_restoresFullList -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ui.TaskFilterTests@10683d9d]" started-at="2026-03-28T11:26:49 EET" name="tearDown" finished-at="2026-03-28T11:26:49 EET" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.ui.TaskFilterTests -->
+      <class name="tests.api.TasksApiTests">
+        <test-method is-config="true" signature="setUpApi()[pri:0, instance:tests.api.TasksApiTests@43bc63a3]" started-at="2026-03-28T11:26:30 EET" name="setUpApi" finished-at="2026-03-28T11:26:30 EET" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpApi -->
+        <test-method signature="createTaskWithEmptyTitle_returns400()[pri:0, instance:tests.api.TasksApiTests@43bc63a3]" started-at="2026-03-28T11:26:30 EET" name="createTaskWithEmptyTitle_returns400" description="Creating a task without a title returns 400" finished-at="2026-03-28T11:26:30 EET" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTaskWithEmptyTitle_returns400 -->
+        <test-method signature="createTask_returns201WithBody()[pri:0, instance:tests.api.TasksApiTests@43bc63a3]" started-at="2026-03-28T11:26:30 EET" name="createTask_returns201WithBody" description="Creating a task returns 201 with id, title and status PENDING" finished-at="2026-03-28T11:26:30 EET" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTask_returns201WithBody -->
+        <test-method signature="deleteTask_returns204()[pri:0, instance:tests.api.TasksApiTests@43bc63a3]" started-at="2026-03-28T11:26:30 EET" name="deleteTask_returns204" description="Deleting a task returns 204 and the task no longer exists" finished-at="2026-03-28T11:26:30 EET" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTask_returns204 -->
+        <test-method signature="getTasksFilteredByStatus_returnsOnlyMatchingStatus()[pri:0, instance:tests.api.TasksApiTests@43bc63a3]" started-at="2026-03-28T11:26:30 EET" name="getTasksFilteredByStatus_returnsOnlyMatchingStatus" description="GET /api/tasks?status=PENDING returns only PENDING tasks" finished-at="2026-03-28T11:26:30 EET" duration-ms="61" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTasksFilteredByStatus_returnsOnlyMatchingStatus -->
+        <test-method signature="getTasksWithoutToken_returns401()[pri:0, instance:tests.api.TasksApiTests@43bc63a3]" started-at="2026-03-28T11:26:30 EET" name="getTasksWithoutToken_returns401" description="Accessing tasks without a token returns 401" finished-at="2026-03-28T11:26:30 EET" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTasksWithoutToken_returns401 -->
+        <test-method signature="getTasks_returnsArray()[pri:0, instance:tests.api.TasksApiTests@43bc63a3]" started-at="2026-03-28T11:26:30 EET" name="getTasks_returnsArray" description="GET /api/tasks returns a JSON array" finished-at="2026-03-28T11:26:30 EET" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTasks_returnsArray -->
+        <test-method signature="updateTask_changesFields()[pri:0, instance:tests.api.TasksApiTests@43bc63a3]" started-at="2026-03-28T11:26:30 EET" name="updateTask_changesFields" description="Updating a task changes its title and status correctly" finished-at="2026-03-28T11:26:30 EET" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateTask_changesFields -->
+      </class> <!-- tests.api.TasksApiTests -->
+    </test> <!-- Full Regression Suite -->
+  </suite> <!-- Task Manager Test Suite -->
+</testng-results>

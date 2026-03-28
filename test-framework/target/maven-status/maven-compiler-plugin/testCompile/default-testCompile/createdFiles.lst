@@ -1,0 +1,13 @@
+pages\BasePage.class
+tests\ui\TaskCRUDTests.class
+pages\LoginPage.class
+tests\api\AuthApiTests.class
+tests\ui\TaskFilterTests.class
+tests\api\TasksApiTests.class
+pages\DashboardPage.class
+utils\ConfigReader.class
+utils\ExtentReportListener.class
+base\BaseTest.class
+tests\ui\LoginTests.class
+base\BaseApiTest.class
+utils\ScreenshotUtils.class
