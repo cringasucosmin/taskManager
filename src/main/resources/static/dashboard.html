@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager - Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="dashboard-page">
+
+<nav class="navbar">
+    <div class="nav-brand">Task Manager</div>
+    <div class="nav-right">
+        <span id="nav-username" class="nav-username"></span>
+        <button id="logout-btn" class="btn btn-outline">Logout</button>
+    </div>
+</nav>
+
+<div class="dashboard-container">
+
+    <!-- Create Task Section -->
+    <div class="card">
+        <h2 class="card-title">New Task</h2>
+        <form id="task-form">
+            <div class="form-group">
+                <label for="task-title">Title *</label>
+                <input type="text" id="task-title" placeholder="Task title">
+            </div>
+            <div class="form-group">
+                <label for="task-description">Description</label>
+                <textarea id="task-description" placeholder="Optional description" rows="2"></textarea>
+            </div>
+            <div class="form-row">
+                <!-- Hidden field — used when editing an existing task -->
+                <input type="hidden" id="task-id">
+                <button type="submit" id="task-submit-btn" class="btn btn-primary">Add Task</button>
+                <button type="button" id="task-cancel-btn" class="btn btn-outline" style="display:none;">Cancel</button>
+            </div>
+        </form>
+        <div id="task-error" class="alert alert-error" style="display:none;"></div>
+    </div>
+
+    <!-- Filter Section -->
+    <div class="filter-bar">
+        <span class="filter-label">Filter:</span>
+        <button class="filter-btn active" data-status="ALL">All</button>
+        <button class="filter-btn" data-status="PENDING">Pending</button>
+        <button class="filter-btn" data-status="IN_PROGRESS">In Progress</button>
+        <button class="filter-btn" data-status="DONE">Done</button>
+    </div>
+
+    <!-- Task List -->
+    <div id="task-list" class="task-list">
+        <div class="loading">Loading tasks...</div>
+    </div>
+
+</div>
+
+<!-- Delete Confirmation Modal -->
+<div id="delete-modal" class="modal" style="display:none;">
+    <div class="modal-content">
+        <h3>Delete Task</h3>
+        <p>Are you sure you want to delete this task?</p>
+        <div class="modal-actions">
+            <button id="confirm-delete-btn" class="btn btn-danger">Delete</button>
+            <button id="cancel-delete-btn" class="btn btn-outline">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<script src="/js/tasks.js"></script>
+</body>
+</html>

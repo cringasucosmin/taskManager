@@ -1,0 +1,13 @@
+com\taskmanager\repository\TaskRepository.class
+com\taskmanager\repository\UserRepository.class
+com\taskmanager\service\AuthService.class
+com\taskmanager\controller\AuthController.class
+com\taskmanager\controller\TaskController.class
+com\taskmanager\TaskManagerApplication.class
+com\taskmanager\model\TaskStatus.class
+com\taskmanager\dto\LoginRequest.class
+com\taskmanager\dto\TaskRequest.class
+com\taskmanager\dto\RegisterRequest.class
+com\taskmanager\model\User.class
+com\taskmanager\service\TaskService.class
+com\taskmanager\model\Task.class

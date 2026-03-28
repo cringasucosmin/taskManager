@@ -1,0 +1,13 @@
+C:\Users\cring\Desktop\proiectNou\task-manager-app\src\main\java\com\taskmanager\TaskManagerApplication.java
+C:\Users\cring\Desktop\proiectNou\task-manager-app\src\main\java\com\taskmanager\dto\LoginRequest.java
+C:\Users\cring\Desktop\proiectNou\task-manager-app\src\main\java\com\taskmanager\dto\TaskRequest.java
+C:\Users\cring\Desktop\proiectNou\task-manager-app\src\main\java\com\taskmanager\repository\TaskRepository.java
+C:\Users\cring\Desktop\proiectNou\task-manager-app\src\main\java\com\taskmanager\model\Task.java
+C:\Users\cring\Desktop\proiectNou\task-manager-app\src\main\java\com\taskmanager\repository\UserRepository.java
+C:\Users\cring\Desktop\proiectNou\task-manager-app\src\main\java\com\taskmanager\service\TaskService.java
+C:\Users\cring\Desktop\proiectNou\task-manager-app\src\main\java\com\taskmanager\controller\AuthController.java
+C:\Users\cring\Desktop\proiectNou\task-manager-app\src\main\java\com\taskmanager\model\TaskStatus.java
+C:\Users\cring\Desktop\proiectNou\task-manager-app\src\main\java\com\taskmanager\controller\TaskController.java
+C:\Users\cring\Desktop\proiectNou\task-manager-app\src\main\java\com\taskmanager\service\AuthService.java
+C:\Users\cring\Desktop\proiectNou\task-manager-app\src\main\java\com\taskmanager\dto\RegisterRequest.java
+C:\Users\cring\Desktop\proiectNou\task-manager-app\src\main\java\com\taskmanager\model\User.java
