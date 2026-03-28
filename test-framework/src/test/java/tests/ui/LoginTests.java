@@ -55,7 +55,9 @@ public class LoginTests extends BaseTest {
     public void loginWithValidCredentials_redirectsToDashboard() {
         loginPage.loginWith(testUsername, testPassword);
 
-        // After successful login, browser should be on the dashboard
+        // Wait for JS redirect before checking URL
+        loginPage.waitForUrlContaining("dashboard");
+
         String currentUrl = loginPage.getCurrentUrl();
         Assert.assertTrue(currentUrl.contains("dashboard"),
             "Expected redirect to dashboard, but URL was: " + currentUrl);
